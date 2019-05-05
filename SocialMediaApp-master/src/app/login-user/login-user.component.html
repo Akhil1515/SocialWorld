@@ -1,0 +1,59 @@
+
+<div class = "main-container">
+  <div class="row2">
+
+  <img class = "logo" src="http://localhost:3000/uploads/logo.png" alt="logo">
+    <ul class="btn1">
+        <li><a routerLink="/login">Login</a></li>
+        <li><a routerLink="/register">Sign Up</a></li>
+    </ul>
+</div>
+</div>
+
+<section>
+<div class = "main">
+  <div class="content">
+  <div class = "row">
+  <div class = "form-group col-md-3 offset-md-3">
+  <h2>Login</h2>
+  </div>
+  </div>
+<div class = "row">
+<div class = "form-group col-md-2 offset-md-3">
+  <label for="loginemail">Email:</label>
+  </div>
+  <div class = "form-group col-md-3">
+  <input type="text" class="form-control" id="loginemail" name="loginemail" (keyup) = "loginInputForEmail($event)">
+</div>
+</div>
+<div class = "row">
+<div class = "form-group col-md-2 offset-md-3">
+  <label for="loginpassword">Password:</label>
+</div>
+<div class = "form-group col-md-3">
+  <input type="Password" class="form-control" id="loginpassword" name="loginpassword"  (keydown.enter)="loginButtonClick($event)" (keyup) = "loginInputForPassword($event)">
+</div>
+
+</div>
+
+<div class="alert alert-danger col-md-3 offset-md-5" *ngIf="errorFlag">{{errorMessage}}.
+</div>
+
+
+
+<div class = "row">
+<div class = "form-group col-md-3 offset-md-3">
+  <button class="btn btn-success" (click) = "loginButtonClick()">Login</button>
+
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>This webpage was created for the course Web Programming Languages by Timothy McMohan.      </p>
+    </div>
+</footer>

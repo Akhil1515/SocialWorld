@@ -1,0 +1,14 @@
+  <div class="form-popup col-md-4 offset-md-4 align-middle">
+    <div class="row text-area">
+    <textarea placeholder = "enter text" (keyup) = "posttext($event)" ></textarea>
+    </div>
+    <div class="row">
+    <p>Disable comments</p>
+    <input type="radio" value="yes" name="commentability" (change) = radioCommentType($event)> No
+    <input type="radio" value="no" name="commentability" (change) = radioCommentType($event)> Yes
+    </div>
+    <div class="row">
+    <input type="file" name="profilePic" accept="image/*|video/* " (change) = "onImageUpload($event)">
+    </div>
+    <button class="btn btn-success" type = "submit" (click) = "postcontent()">Post</button>
+  </div>

@@ -1,0 +1,91 @@
+<div class = "main-container">
+  <div class="row2">
+      <img class = "logo" src="http://localhost:3000/uploads/logo.png" alt="logo">
+    <ul class="btn1">
+        <li><a routerLink="/login">Login</a></li>
+        <li><a routerLink="/register">Sign Up</a></li>
+    </ul>
+</div>
+
+</div>
+
+<section>
+<div class= "background" >
+<div class = "content">
+
+<div class = "row">
+  	<div class = "form-group col-md-5 offset-md-3">
+<h2>Create a New Account</h2>
+</div>
+</div>
+  <div class = "row">
+	<div class = "form-group col-md-2 offset-md-3">
+		<label for="username">Full Name:</label>
+    </div>
+	<div class = "form-group col-md-3">
+        <input  type="text" class="form-control" id="username" name="username"  (keyup) = "registrationInputForFullName($event)">
+	</div>
+  </div>
+  <div class = "row">
+	<div class = "form-group col-md-2 offset-md-3">
+    <label for="useremail">Email:</label>
+         </div>
+	<div class = "form-group col-md-3">
+    <input type="text" class="form-control" id="useremail" name="useremail" (keyup) = "registrationInputForEmail($event)">
+  </div>
+  </div>
+
+  <div class = "row">
+	<div class = "form-group col-md-2 offset-md-3">
+		<label for="userpassword">Password:</label>
+         </div>
+	<div class = "form-group col-md-3">
+		<input type="Password" class="form-control" id="userpassword" name="userpassword" (keyup) = "registrationInputForPassword($event)">
+	</div>
+  </div>
+  <div class = "row">
+  <div class = "form-group col-md-2 offset-md-3">
+    <label for="userconfirmpassword">Confirm Password:</label>
+       </div>
+	<div class = "form-group col-md-3">
+    <input type="Password" class="form-control" id="userconfirmpassword" name="userconfirmpassword">
+  </div>
+  </div>
+
+
+  <div class = "row">
+	<div class = "form-group col-md-2 offset-md-3">
+    <label >Date of Birth</label>
+         </div>
+	<div class = "form-group col-md-3">
+    <input type="date" class="form-control" placeholder="Enter DOB" name="dob" required>
+  </div>
+  </div>
+  <div class = "row">
+	<div class = "form-group col-md-2 offset-md-3">
+    <label >Profile pic</label>
+         </div>
+	<div class = "form-group col-md-3">
+    <input type="file" name="profilePic" accept="image/*" (change) = "onImageUpload($event)">
+  </div>
+  </div>
+  <div class = "row">
+	<div class = "form-group col-md-3 offset-md-3">
+  <div id="user_submit">
+		<button type="submit" class="btn btn-success" (click) = "validateRegistration()">Sign Up</button>
+	</div>
+  </div>
+  </div>
+  </div>
+</div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>
+            This webpage was created for the course Web Programming Languages by Timothy McMohan.
+        </p>
+
+    </div>
+</footer>
+<!-- </form> -->

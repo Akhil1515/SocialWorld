@@ -1,0 +1,29 @@
+
+
+.division{
+   background-color: white;
+}
+.hidden{
+  visibility: hidden;
+}
+.comment-btn{
+    margin: 4%;
+}
+#commentText{
+  margin-left: 2%;
+}
+.commentSection{
+  background-color: #fff;
+  margin-bottom: 15px;
+  margin-left: 0.01%;
+}
+.camera{
+  margin-top: 5px;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+/* .post,
+.camera{
+  margin-left: 10px;
+} */

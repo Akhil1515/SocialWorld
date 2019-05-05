@@ -1,0 +1,38 @@
+
+
+div:first-of-type {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+.test{
+    margin-top: 50px;
+}
+ul{
+  list-style: none;
+  list-style-type: none;
+
+}
+
+input {
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+
+  top: 4px;
+}
+.btn-success,
+p {
+  margin-left: 45%;
+}
+
+
+input:checked {
+  border: 6px solid black;
+}

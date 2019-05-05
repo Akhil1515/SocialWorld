@@ -1,0 +1,23 @@
+<div class="container-fluid">
+<div class="chat col-md-8">
+    <div class="row profile">
+      <img src="{{ friendProfilePicture }}" class="rounded-circle" style="margin-left:25px;" width="100px" height="100px"/>
+      <p>{{ friendName }}</p>
+    </div>
+
+    <div class="row msgs">
+        <div class="well" style="padding-left:25px;">
+            <div *ngFor="let item of messageArray">
+            <span><strong>{{item.user}} : </strong> {{item.message}}</span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row send">
+        <input type="text" class="form-control col-md-10" (keydown.enter)="sendMessage()" placeholder="Type a message..." [(ngModel)]="messageText">
+        <button type="button" class="btn btn-success pull-right col-md-2"  (click)="sendMessage()">Send</button>
+    </div>
+  </div>
+</div>
+
+<p *ngIf="flagObj">no obj</p>

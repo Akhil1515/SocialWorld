@@ -1,0 +1,21 @@
+<div [ngSwitch]="isFriend">
+  <div *ngSwitchCase="'1'">
+    <button class="btn-success" (click)="addFriend()">Add Friend</button>
+  </div>
+  <div *ngSwitchCase="'2'">
+    <button class="btn-info" (click)="cancelRequest()">Cancel Request</button>
+  </div>
+  <div *ngSwitchCase="'3'">
+    <button class="btn-warning" (click)="removeFriend()">Remove Friend</button>
+  </div>
+  <div *ngSwitchCase="'4'">
+    <strong>Respond to Friend Request</strong>
+    <div class="form-group">
+      <select (change)="selectOption($event)">
+        <option selected>Respond to Friend Request</option>
+        <option value="1">Accept</option>
+        <option value="0">Decline</option>
+      </select>
+    </div>
+  </div>
+</div>

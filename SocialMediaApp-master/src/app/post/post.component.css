@@ -1,0 +1,21 @@
+.btn{
+  border-radius: 10px;
+  border: 1px solid #333;
+  padding: 4px 8px;
+}
+p{
+  margin-right: 10px;
+}
+
+.form-popup{
+  position: relative;
+  top: 80px;
+}
+.row {
+  padding: 5px;
+  width:100%;
+}
+input {
+  text-align: center;
+  padding: 5px;
+}

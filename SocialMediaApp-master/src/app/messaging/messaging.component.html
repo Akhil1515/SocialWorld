@@ -1,0 +1,16 @@
+
+<div class="row main-container">
+    <div class="col-md-3 left">
+      <input class="search-box" type="text" placeholder="Search for a friend..." (keyup)="searchForThisUsers($event)">
+      <p *ngIf="errorPresent">{{errorMessage}}</p>
+      <div class="friends">
+        <app-message-each-child  *ngFor="let userids of arrayOfIds" [userId]="userids"></app-message-each-child>
+        </div>
+    </div>
+
+
+    <div class="col-md-8">
+      <router-outlet></router-outlet>
+    </div>
+
+</div>
